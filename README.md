@@ -1,21 +1,22 @@
 # Fullstack Evaluation Notes
 
-Because I'm programming on Windows and not linux, I used the full command
+Because I'm programming on Windows and not Linux, I used the full command
 "php -S localhost:8765 -t webroot/" instead of "./server" to start the server.
 Probably won't effect anything, but something to note if the command to run
-the server isn't working for whatever reason on linux.
+the server isn't working for whatever reason on Linux.
 
 I made the assumption that the user would only want one search bar as opposed
-to three (one for each of the search options). As a result of this, if a user
-enters a country code it can be treated as part of a country name if it provides
-search results. This was a compromise I made over having multiple search
-bars that looked cluttered.
+to three (one for each of the search options). When a user submits their input,
+the code checks if it is a valid full country name. If not, it checks if it is a valid
+code. If not, it checks if it is a valid partial country name. As a result of this format,
+when entering the code "US" there will be only the United States and no countries
+that may have "US" somewhere in their name.
 
 When searching "united", Mexico can appear. This is because one of Mexico's
-alternate spellings is "United Mexican States". I decided to allow this because
-it's a valid name for the country, although not the most common one. There may
-be similar results where a country may not seem like it should be part of the
-results but is due to alternate spellings.
+alternate names is "United Mexican States". I decided to allow this because
+it's a valid name for the country, although not the most common one and not
+the one displayed on the html page. There may be similar results where a country
+may not seem like it should be part of the results but is due to alternate names.
 
 
 ## How to use

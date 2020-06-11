@@ -4,7 +4,7 @@
 var regions = {};
 var subregions = {};
 
-Object.size = function(obj) { //code used to determine size of object. I don't claim to own this code, this specific function was found on stack exchange.
+Object.size = function(obj) {
     var size = 0, key;
     for (key in obj) {
         if (obj.hasOwnProperty(key)) size++;
