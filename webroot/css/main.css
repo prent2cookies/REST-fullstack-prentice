@@ -1,3 +1,56 @@
 /*
 This css file is a placeholder. Use this or roll your own, choice is yours.
 */
+
+body{
+	background-color: aliceBlue;
+}
+
+h1, p, table{
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	text-align: center;
+}
+
+table{
+	border-collapse: collapse;
+	
+}
+
+table, th, td{
+	border: 1px solid lightBlue;
+	padding: 15px;
+	background-color: white;
+	column-width: 50%;
+	align: center;
+}
+
+input{
+	text-align: center;
+	display: inline-block;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+}
+
+input[type=text]{
+	border: 3px solid lightBlue;
+	border-radius: 4px;
+}
+
+input[type=submit]{
+		background-color: lightBlue; 
+		border: 2px solid lightBlue;
+		border-radius: 4px;
+}
+
+div{
+	text-align: center;
+}
+
+table.data{
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 18px;
+	width: 100%;
+	column-width: 50%;
+	align: center;
+}
